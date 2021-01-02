@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+  >
+
+    <TextView
+        android:id="@+id/HedaingID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_below="@id/HedaingID"
+        android:id="@+id/emailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Yout email"/>
+
+    <EditText
+        android:layout_below="@id/emailID"
+        android:id="@+id/passID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Yout password"/>
+
+
+    <Button
+        android:onClick="onsubmit"
+        android:layout_below="@id/passID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+
+
+
+
+</RelativeLayout>
